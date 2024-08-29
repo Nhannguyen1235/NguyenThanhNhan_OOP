@@ -66,6 +66,7 @@ public class DanhSachVatPham {
     }
     // tính sức công pha cần để giải cứu = (chỉ số SM + he sơ SM)* xu/ 1 sức công phá
     public void giacuu() {
+        try {
         System.out.println("Nhập số xu thu thập được: ");
         int xu = new java.util.Scanner(System.in).nextInt();
         while (true){
@@ -103,6 +104,9 @@ public class DanhSachVatPham {
                 default:
                     System.out.println("Vui lý chọn lại!");
             }
+        }
+        } catch (Exception e) {
+            System.out.println("Lỗi nhập liệu, vui lòng nhập lại!!!");
         }
     }
     // tính số sức mạnh cần của từng vũ khí để giải cứu
