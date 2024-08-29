@@ -98,7 +98,7 @@ public class DanhSachVatPham {
                     sucManhVuKhi(xu, "Hòn đá kích nổ");
                     break;
                 case 6:
-                    break;
+                    giacuu();
                 case 7:
                     System.exit(0);
                 default:
